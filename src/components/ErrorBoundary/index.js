@@ -19,7 +19,6 @@ class ErrorBoundary extends Component
     if(this.state.hasError){
     return <h1>Something went Wrong</h1>
     }
-    console.log(this.props.children)
    return this.props.children;
  }
 }
