@@ -24,7 +24,7 @@ function App() {
             <div className="content" tabIndex={0}>
               <ErrorBoundary>
                 <Routes>
-                  <Route path="/books-list" element={<Books />} />
+                  <Route path={process.env.PUBLIC_URL + '/'} element={<Books />} />
                   <Route path="*" exact={true} element={<PageNotFound />} />
                 </Routes>
               </ErrorBoundary>
