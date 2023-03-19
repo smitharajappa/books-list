@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1px;
+
+  .App {
+    display: flex;
+
+    main {
+      padding-left: 5px;
+      width: 100%;
+
+      // .title {
+      //   position: fixed;
+      //   top: 0;
+      //   height: 50px;
+      //   z-index: 1;
+      //   background-color: var(--white-color);
+      //   width: 100%;
+      //   padding-left: 0 !important;
+      // }
+      .content {
+        background: var(--gray-color);
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+.m_60 {
+  margin-left: 60px;
+}
+
+.m_250{
+  margin-left: 250px;
+}
