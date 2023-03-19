@@ -24,7 +24,7 @@ function App() {
             <div className="content" tabIndex={0}>
               <ErrorBoundary>
                 <Routes>
-                  <Route path="/" element={<Books />} />
+                  <Route path="/books-list" element={<Books />} />
                   <Route path="*" exact={true} element={<PageNotFound />} />
                 </Routes>
               </ErrorBoundary>
