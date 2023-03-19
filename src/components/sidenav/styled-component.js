@@ -1,21 +1,11 @@
 import styled from "styled-components";
 
 export const StyledSideNav = styled.div`
-  position: fixed;
-  width:100%;
   z-index: 700;
   display: flex;
   flex-direction: row;
-  .title {
-    width: 100%;
-    top: 0;
-    height: 50px;
-    z-index: 700;
-    background-color: var(--white-color);
-    padding-left: 0 !important;
-    margin-left: 5px;
-  }
   .sidenav {
+    position: fixed;
     transition: width 0.3s ease-in-out;
     height: 100vh;
     background-color: var(--white-color);

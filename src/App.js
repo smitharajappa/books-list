@@ -9,6 +9,7 @@ import Sidenav from "./components/sidenav";
 import PageNotFound from "./components/pageNotFound";
 import clsx from "clsx";
 import ErrorBoundary from "./components/ErrorBoundary/index";
+import atomLogo from "./assets/atom.png";
 
 function App() {
   const [open, setopen] = useState(true);
@@ -21,6 +22,9 @@ function App() {
         <div className="App">
           <Sidenav open={open} toggleOpen={toggleOpen} />
           <main className={clsx(open ? "m_250" : "m_60")}>
+          <div className="title" tabIndex={0}>
+        <img src={atomLogo} width={150} height={50} alt="logo" />
+        </div>
             <div className="content" tabIndex={0}>
               <ErrorBoundary>
                 <Routes>

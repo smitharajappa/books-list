@@ -3,7 +3,6 @@ import { navData } from "./config";
 import { ReactComponent as MenuIcon } from "../../assets/menu-icon.svg";
 import { StyledSideNav } from "./styled-component";
 import clsx from "clsx";
-import atomLogo from "../../assets/atom.png";
 
 export default function Sidenav({ open, toggleOpen }) {
   return (
@@ -33,9 +32,6 @@ export default function Sidenav({ open, toggleOpen }) {
             </NavLink>
           ))}
         </div>
-      </div>
-      <div className="title" tabIndex={0}>
-        <img src={atomLogo} width={150} height={50} alt="logo" />
       </div>
     </StyledSideNav>
   );
