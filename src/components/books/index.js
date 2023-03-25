@@ -21,7 +21,7 @@ const Books = ({ booksData, fetchBooks }) => {
           book.volumeInfo.title
             .toLowerCase()
             .includes(searchValue.toLowerCase()) ||
-          book.volumeInfo.authors[0]
+          book.volumeInfo?.['authors']
             .toLowerCase()
             .includes(searchValue.toLowerCase())
         );

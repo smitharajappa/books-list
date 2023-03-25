@@ -17,7 +17,7 @@ const CardWrapper = ({ bookList }) => {
                 {book.volumeInfo["title"]}
               </Card.Title>
               <Card.Text className="card_text">
-                Authors: {book.volumeInfo.authors[0]}
+                Authors: {book.volumeInfo?.['authors']}
               </Card.Text>
               <Card.Text className="card_text">
                 Publisher: {book.volumeInfo.publisher}
